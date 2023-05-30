@@ -245,31 +245,17 @@ nav a:hover{
 
 
 /* Download CV btn */
-.down-btn{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 50px;
-    width: 150px;
-    margin-top: 10px;
-    background-color: transparent;
-    border: 2px solid;
-    border-radius:7px;
-    cursor: pointer;
-    transition: all 0.4s ease-in;
-}
 .cv-btn{
-    color: #0d0d0d;
-    font-size:1rem;
+    font-size: 1.5rem;
     text-decoration: none;
-}
-
-.down-btn:hover{
-    border: none;
+    color: #ffffff;
     background-color: #008080;
-    color: white;
+    border-radius: 7px;
+    padding: 5px;
 }
 
-.down-btn:hover .cv-btn{
-    color: white;
+.cv-btn:hover{
+    background-color: transparent;
+    color: #333;
+    border: solid;
 }
