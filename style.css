@@ -1,0 +1,275 @@
+@font-face {
+    font-family: 'Outfit';
+    src: url(./fonts/Outfit-VariableFont_wght.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Outfit', sans-serif;
+}
+
+
+/* Nav Start */
+
+nav{
+    background-color: #ffffff;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 80px;
+    width: 100%;
+    font-size: 1.5rem;
+    position: fixed;
+    top: 0;
+    z-index: 99999;
+}
+
+nav a{
+    text-decoration: none;
+    color: #333;
+    transition: color 0.5s ease-in-out;
+}
+
+#menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+nav li{
+    list-style: none;
+    font-weight: 500;
+}
+
+.logo img{
+    height: 50px;
+}
+
+.logo{
+    font-weight: 600;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    text-transform: uppercase;
+    transition: color 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.logo:hover,
+nav a:hover{
+    color: #008080;
+}
+
+.active{
+    color: #008080;
+}
+
+#change-text1,
+#change-text2{
+    animation: change 3.0s ease-in-out infinite;
+}
+
+@keyframes change{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/* Nav Ends */
+
+/*  Hamburgur Menu Start */
+
+.ham-menu{
+    height: 30px;
+    width: 30px;
+    position: fixed;
+    top: 20px;
+    right: 40px;
+    z-index: 300394;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    display: none;
+}
+
+
+.line{
+    width: 100%;
+    height: 15%;
+    border-radius: 10px;
+    background-color: #333;
+}
+
+
+.rotate{
+    transform: rotate(40deg) translatey(10px);
+}
+
+.rotate2{
+    transform: rotate(120deg) translatey(10px);  
+}
+
+
+
+
+
+/*  Hamburgur Menu Ends */
+
+.teal{
+    color: #008080;
+    font-weight: 600;
+    font-style: italic;   
+}
+
+
+/* Intro-section */
+#intro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    height: 80vh;
+    width: 100%;
+    font-size: 2.5rem;
+}
+
+.intro-text{
+    width: 40%;
+    font-size: 2rem;
+}
+
+
+.intro-image img{
+    height: 300px;
+}
+
+/* Social Media Section */
+#social{
+    height:20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    width: 100%;
+}
+
+.social-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:50px
+}
+
+
+.social-icons a{
+    text-decoration: none;
+    color: black;
+}
+
+.fa-brands{
+    font-size: 2.5rem;
+}
+
+.fa-brands:hover{
+    color: #008080;
+}
+
+
+
+/* Skills Section */
+#skills {
+    margin-top: 10vh;
+    height:90vh;
+    width: 100%;
+    text-align: center;
+    text-align: center;
+}
+
+#skills h2{
+    font-size: 3rem;
+}
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    cursor: pointer;
+}
+
+.skill img {
+    width: 100px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.skill h3 {
+    font-size: 16px;
+}
+
+/* Contact Section */
+#contact{
+    text-align: center;
+    height: 90vh;
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Download CV btn */
+.down-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 150px;
+    margin-top: 10px;
+    background-color: transparent;
+    border: 2px solid;
+    border-radius:7px;
+    cursor: pointer;
+    transition: all 0.4s ease-in;
+}
+.cv-btn{
+    color: #0d0d0d;
+    font-size:1rem;
+    text-decoration: none;
+}
+
+.down-btn:hover{
+    border: none;
+    background-color: #008080;
+    color: white;
+}
+
+.down-btn:hover .cv-btn{
+    color: white;
+}

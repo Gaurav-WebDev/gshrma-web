@@ -1,0 +1,71 @@
+@media (max-width: 768px){
+    
+
+    #menu.close{
+        display: none;
+    }
+
+
+    html{
+        font-size: 10px;
+    }
+
+    .logo{
+        font-size: 1.5rem;
+    }
+
+    #menu{  
+        display: flex;
+        flex-direction: column; 
+        position: absolute;
+        width: 100%;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        justify-content: center;
+        font-size: 30px;
+        gap: 50px;
+        background-color: #fff3f3a9;
+        backdrop-filter: blur(40px);
+        color: #ffffff;
+    }
+
+
+    .ham-menu{
+        display: flex;
+    }
+
+/* Intro Section Respo */
+    #intro{
+        flex-direction: column-reverse;
+        height: 90vh;
+    }
+
+    .intro-text{
+        width: 100%;
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    .intro-image img{
+        margin-top: 70px;
+        height: 250px;
+    }
+
+    #social{
+        height: 10vh;
+    }
+
+
+    #skills{
+        height: fit-content;
+    }
+
+    .down-btn{
+        text-align: center;
+        font-size: 2.5rem;
+    }
+}
+
+
+
