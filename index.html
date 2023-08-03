@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="respo.css">
+    <link rel="stylesheet" href="loader.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
@@ -16,6 +17,23 @@
 </head>
 
 <body>
+
+    <div id="wifi-loader">
+        <svg class="circle-outer" viewBox="0 0 86 86">
+            <circle class="back" cx="43" cy="43" r="40"></circle>
+            <circle class="front" cx="43" cy="43" r="40"></circle>
+            <circle class="new" cx="43" cy="43" r="40"></circle>
+        </svg>
+        <svg class="circle-middle" viewBox="0 0 60 60">
+            <circle class="back" cx="30" cy="30" r="27"></circle>
+            <circle class="front" cx="30" cy="30" r="27"></circle>
+        </svg>
+        <svg class="circle-inner" viewBox="0 0 34 34">
+            <circle class="back" cx="17" cy="17" r="14"></circle>
+            <circle class="front" cx="17" cy="17" r="14"></circle>
+        </svg>
+        <div class="text" data-text="Gaurav's Portfolio"></div>
+    </div>
 
     <header>
         <nav id="nav">
@@ -95,6 +113,11 @@
     <script src="three.r134.min.js"></script>
     <script src="vanta.net.min.js"></script>
     <script>
+      window.addEventListener('load', () => {
+      const loaderContainer = document.getElementById('wifi-loader');
+      loaderContainer.style.display = 'none';
+    });
+
         VANTA.NET({
             el: "main",
             mouseControls: true,
@@ -111,6 +134,8 @@
             spacing: 20.00
         })
 
+
+       
     </script>
 </body>
 
