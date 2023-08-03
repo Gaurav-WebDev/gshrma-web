@@ -90,12 +90,12 @@
 
 #wifi-loader .text {
   position: absolute;
-  bottom: -60px;
+  bottom: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 25px;
   letter-spacing: 0.2px;
 }
 

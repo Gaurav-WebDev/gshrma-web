@@ -113,11 +113,12 @@
     <script src="three.r134.min.js"></script>
     <script src="vanta.net.min.js"></script>
     <script>
-      window.addEventListener('load', () => {
+     function hideLoader() {
       const loaderContainer = document.getElementById('wifi-loader');
       loaderContainer.style.display = 'none';
-    });
+    }
 
+    setTimeout(hideLoader, 5000);
         VANTA.NET({
             el: "main",
             mouseControls: true,
