@@ -12,6 +12,10 @@ body{
     font-family: 'Outfit', sans-serif;
 }
 
+body.disable-scroll {
+    overflow: hidden;
+  }
+  
 
 /* Nav Start */
 
