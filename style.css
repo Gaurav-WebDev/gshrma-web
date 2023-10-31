@@ -70,11 +70,11 @@ nav li{
 
 .logo:hover,
 nav a:hover{
-    color: #008080;
+    color: #7843E9;
 }
 
 .active{
-    color: #008080;
+    color: #7843E9;
 }
 
 #change-text1,
@@ -137,7 +137,7 @@ nav a:hover{
 /*  Hamburgur Menu Ends */
 
 .teal{
-    color: #008080;
+    color: #7843E9;
     font-weight: 600;
     font-style: italic;   
 }
@@ -162,6 +162,9 @@ nav a:hover{
 
 .intro-image img{
     height: 300px;
+    border: 2px solid;
+    border-radius: 50%;
+    box-shadow: -1px 1px 6px 0px #7843E9;
 }
 
 /* Social Media Section */
@@ -195,7 +198,7 @@ nav a:hover{
 }
 
 .fa-brands:hover{
-    color: #008080;
+    color: #7843E9;
 }
 
 
@@ -255,7 +258,7 @@ nav a:hover{
     font-size: 1.5rem;
     text-decoration: none;
     color: #ffffff;
-    background-color: #008080;
+    background-color: #7843E9;
     border-radius: 7px;
     padding: 5px;
 }
