@@ -28,7 +28,6 @@ body.disable-scroll {
 
 nav{
     background-color: #ffffffc6;
-    backdrop-filter: blur(3px);
     color: #333;
     display: flex;
     align-items: center;
